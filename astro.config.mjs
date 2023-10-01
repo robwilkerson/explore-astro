@@ -2,6 +2,6 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://robwilkerson.github.io",
-  base: "/explore-astro",
+  site: "https://robwilkerson.org",
+  base: "/",
 });
