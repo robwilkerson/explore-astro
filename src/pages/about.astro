@@ -1,5 +1,9 @@
 ---
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
+const pageTitle = "Who Am I?";
 ---
 
 <html lang="en">
@@ -8,15 +12,13 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
+    <Navigation />
 
     <h1>My Astro Site</h1>
-    <h2>Who Am I?</h2>
+    <h2>{pageTitle}</h2>
 
     <p>
       I am working through Astro's introductory tutorial. This is the second
@@ -27,5 +29,7 @@
       This site will update as I complete more of the tutorial, so keep checking
       back and see how my journey is going!
     </p>
+
+    <Footer />
   </body>
 </html>

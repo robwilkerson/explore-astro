@@ -1,5 +1,9 @@
 ---
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
+const pageTitle = "Home";
 ---
 
 <html lang="en">
@@ -8,14 +12,25 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
+    <Navigation />
 
-    <h1>Astro</h1>
-    <h2>Developing Thoughts</h2>
+    <h1>{pageTitle}</h1>
+    <p>I build things with bytes.</p>
+    <p>
+      I'm a software engineer and leader with over 20 years of experience
+      designing, architecting, and developing Internet solutions. For the last
+      10 years or so, I've been building, growing, and leading remote teams of
+      software engineers both nationally and internationally.
+    </p>
+    <p>
+      In days of yore, I spent time as an architect, a carpenter, and a
+      paratrooper, but never a butcher, baker, or candlestick maker.
+    </p>
+    <p>I am friend to all dogs and most bartenders.</p>
+
+    <Footer />
   </body>
 </html>
