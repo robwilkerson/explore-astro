@@ -1,36 +1,21 @@
 ---
-import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import DefaultLayout from "../layouts/Default.astro";
 
-const pageTitle = "Home";
+const pageTitle = "Home Page";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Navigation />
-
-    <h1>{pageTitle}</h1>
-    <p>I build things with bytes.</p>
-    <p>
-      I'm a software engineer and leader with over 20 years of experience
-      designing, architecting, and developing Internet solutions. For the last
-      10 years or so, I've been building, growing, and leading remote teams of
-      software engineers both nationally and internationally.
-    </p>
-    <p>
-      In days of yore, I spent time as an architect, a carpenter, and a
-      paratrooper, but never a butcher, baker, or candlestick maker.
-    </p>
-    <p>I am friend to all dogs and most bartenders.</p>
-
-    <Footer />
-  </body>
-</html>
+<DefaultLayout pageTitle={pageTitle}>
+  <h1>{pageTitle}</h1>
+  <p>I build things with bytes.</p>
+  <p>
+    I'm a software engineer and leader with over 20 years of experience
+    designing, architecting, and developing Internet solutions. For the last 10
+    years or so, I've been building, growing, and leading remote teams of
+    software engineers both nationally and internationally.
+  </p>
+  <p>
+    In days of yore, I spent time as an architect, a carpenter, and a
+    paratrooper, but never a butcher, baker, or candlestick maker.
+  </p>
+  <p>I am friend to all dogs and most bartenders.</p>
+</DefaultLayout>

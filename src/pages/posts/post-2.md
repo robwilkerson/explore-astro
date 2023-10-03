@@ -1,12 +1,14 @@
 ---
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
+layout: ../../layouts/Post.astro
+title: 'My Second Blog Post'
+pubDate: 2023-10-03
+description: 'This is the second post of my new Astro blog.'
 image:
-    url: "https://docs.astro.build/assets/arc.webp"
-    alt: "Thumbnail of Astro arcs."
-pubDate: 2022-07-08
-tags: ["astro", "blogging", "learning in public", "successes"]
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'The full Astro logo.'
+tags: ["astro", "blogging", "learning in public"]
 ---
+
+# Post 2
 
 After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
